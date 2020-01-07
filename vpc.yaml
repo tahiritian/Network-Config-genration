@@ -1,0 +1,338 @@
+---
+name: acc-1
+vlans:
+   100: 'PrivateDA'
+   120: 'PubMT'
+   140: 'PriMT'
+   340: 'storage'
+   1340: 'storage-1'
+   native: 999
+interfaces:
+   1:
+    type: port-channel  
+    speed: 10000
+    pc: 100
+   2:
+    type: port-channel
+    speed: 10000
+    pc: 101
+   3:
+    type: port-channel
+    speed: 10000
+    pc: 102
+   4:
+    type: port-channel
+    speed: 10000
+    pc: 103
+   5:
+    type: port-channel
+    speed: 10000
+    pc: 104
+   6:
+    type: port-channel
+    speed: 10000
+    pc: 105
+   7:
+    type: port-channel
+    speed: 10000
+    pc: 106
+   8:
+    type: port-channel
+    speed: 10000
+    pc: 107
+   9: 
+    type: port-channel
+    speed: 10000
+    pc: 108
+   10:
+    type: port-channel
+    speed: 10000
+    pc: 109
+   11:
+    type: port-channel
+    speed: 10000
+    pc: 110
+   12:
+    type: port-channel
+    speed: 10000
+    pc: 111
+   13:
+    type: port-channel
+    speed: 10000
+    pc: 112
+   14:
+    type: port-channel
+    speed: 10000
+    pc: 113
+   15:
+    type: port-channel
+    speed: 10000
+    pc: 114
+   16:
+    type: port-channel
+    speed: 10000
+    pc: 115
+   17:
+    type: port-channel
+    speed: 10000
+    pc: 116
+   18:
+    type: port-channel
+    speed: 10000
+    pc: 117
+   19:
+    type: port-channel
+    speed: 10000
+    pc: 118
+   20:
+    type: port-channel
+    speed: 10000
+    pc: 119
+   21:
+    type: port-channel
+    speed: 10000
+    pc: 120
+   22:
+    type: port-channel
+    speed: 10000
+    pc: 121
+   23:
+    type: port-channel
+    speed: 10000
+    pc: 122
+   24:
+    type: port-channel
+    speed: 10000
+    pc: 123
+   25:
+    type: port-channel
+    speed: 10000
+    pc: 124
+   26:
+    type: port-channel
+    speed: 10000
+    pc: 125
+   27:
+    type: port-channel
+    speed: 10000
+    pc: 126
+   28:
+    type: port-channel
+    speed: 10000
+    pc: 127
+   29:
+    type: port-channel
+    speed: 10000
+    pc: 128
+   30:
+    type: port-channel
+    speed: 10000
+    pc: 129
+   31:
+    type: port-channel
+    speed: 10000
+    pc: 130
+   32:
+    type: port-channel
+    speed: 10000
+    pc: 131
+   33:
+    type: port-channel
+    speed: 10000
+    pc: 132
+   34:
+    type: port-channel
+    speed: 10000
+    pc: 133
+   35:
+    type: port-channel
+    speed: 10000
+    pc: 134
+   36:
+    type: port-channel
+    speed: 10000
+    pc: 135
+   37:
+     type: port-channel
+     speed: 10000
+     pc: 136
+   38:
+    slotid: 1
+    portid: 1
+    type: trunk
+    pc: 100
+   39:
+    slotid: 1
+    portid: 2
+    type: trunk
+    pc: 101
+   40:
+    slotid: 1
+    portid: 3
+    type: trunk
+    pc: 102
+   41:
+    slotid: 1
+    portid: 4
+    type: trunk
+    pc: 103
+   42:
+    slotid: 1
+    portid: 5
+    type: trunk
+    pc: 104
+   43:
+    slotid: 1
+    portid: 6
+    type: trunk
+    pc: 105
+   44:
+    slotid: 1
+    portid: 7
+    type: trunk
+    pc: 106
+   45:
+    slotid: 1
+    portid: 8
+    type: trunk
+    pc: 107
+   46:
+    slotid: 1
+    portid: 9
+    type: trunk
+    pc: 108 
+   47:
+    slotid: 1
+    portid: 10
+    type: trunk
+    pc: 109
+   48:
+    slotid: 1
+    portid: 11
+    type: trunk
+    pc: 110
+   49:
+    slotid: 1
+    portid: 12
+    type: trunk
+    pc: 111
+   50:
+    slotid: 1
+    portid: 13
+    type: trunk
+    pc: 112
+   51:
+    slotid: 1
+    portid: 14
+    type: trunk
+    pc: 113
+   52:
+    slotid: 1
+    portid: 15
+    type: trunk
+    pc: 114
+   53:
+    slotid: 1
+    portid: 16
+    type: trunk
+    pc: 115
+   54:
+    slotid: 1
+    portid: 17
+    type: trunk
+    pc: 116
+   55:
+    slotid: 1
+    portid: 18
+    type: trunk
+    pc: 117
+   56:
+    slotid: 1
+    portid: 19
+    type: trunk
+    pc: 118
+   57:
+    slotid: 1
+    portid: 20
+    type: trunk
+    pc: 119
+   58:
+    slotid: 1
+    portid: 21
+    type: trunk
+    pc: 120
+   59:
+    slotid: 1
+    portid: 22
+    type: trunk
+    pc: 121
+   60:
+    slotid: 1
+    portid: 23
+    type: trunk
+    pc: 122
+   61:
+    slotid: 1
+    portid: 24
+    type: trunk
+    pc: 123
+   62:
+    slotid: 1
+    portid: 25
+    type: trunk
+    pc: 124
+   63:
+    slotid: 1
+    portid: 26
+    type: trunk
+    pc: 125
+   64:
+    slotid: 1
+    portid: 27
+    type: trunk
+    pc: 126
+   65:
+    slotid: 1
+    portid: 28
+    type: trunk
+    pc: 127
+   66:
+    slotid: 1
+    portid: 29
+    type: trunk
+    pc: 128
+   67:
+    slotid: 1
+    portid: 30
+    type: trunk
+    pc: 129
+   68:
+    slotid: 1
+    portid: 31
+    type: trunk
+    pc: 130
+   69:
+    slotid: 1
+    portid: 32
+    type: trunk
+    pc: 131
+   70:
+    slotid: 1
+    portid: 33
+    type: trunk
+    pc: 132
+   71:
+    slotid: 1
+    portid: 34
+    type: trunk
+    pc: 133
+   72:
+    slotid: 1
+    portid: 35
+    type: trunk
+    pc: 134
+   73:
+    slotid: 1
+    portid: 36
+    type: trunk
+    pc: 135

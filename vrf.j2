@@ -1,0 +1,39 @@
+vrf context {{ site }}-domvsm-v803-1
+    address-family ipv4 unicast
+       route-target import {{ local_asn }}:{{ scan_rt }}
+       route-target export {{ local_asn }}:803
+vrf context {{ site }}-ilomexamgmt-v805-1
+    address-family ipv4 unicast
+       route-target import {{ local_asn }}:{{ scan_rt }}
+       route-target export {{ local_asn }}:805
+vrf context {{ site }}-privateda-v800-1
+    address-family ipv4 unicast
+       route-target import {{ local_asn }}:{{ scan_rt }}
+       route-target export {{ local_asn }}:800
+vrf context  {{ site }}-privatemt-v801-1
+    address-family ipv4 unicast
+       route-target import {{ local_asn }}:{{ scan_rt }}
+       route-target export {{ local_asn }}:801
+vrf context  {{ site }}-publicmt-v802-1
+    address-family ipv4 unicast
+       route-target import {{ local_asn }}:{{ scan_rt }}
+       route-target export {{ local_asn }}:802
+vrf context {{ site }}-storage-v806-1
+    address-family ipv4 unicast
+       route-target import {{ local_asn }}:{{ scan_rt }}
+       route-target export {{ local_asn }}:806
+vrf context  {{ site }}-tapefilermgmt-v804-1
+    address-family ipv4 unicast
+       route-target import {{ local_asn }}:{{ scan_rt }}
+       route-target export {{ local_asn }}:804
+vrf context us6-scan-v807-1
+    address-family ipv4 unicast
+       route-target import {{ local_asn }}:800
+       route-target import {{ local_asn }}:801
+       route-target import {{ local_asn }}:802
+       route-target import {{ local_asn }}:803
+       route-target import {{ local_asn }}:804
+       route-target import {{ local_asn }}:805
+       route-target import {{ local_asn }}:806
+       route-target export {{ local_asn }}:{{ scan_rt }}
+

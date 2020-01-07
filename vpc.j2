@@ -1,0 +1,24 @@
+{% for id, int in interfaces.items() -%}
+    {% if int.type == 'port-channel' %}!
+interface port-channel{{ int.pc }}
+    switchport mode trunk
+    switchport trunk native vlan {{ vlans.native }}
+    switchport trunk allowed vlan {{ vlans.native }}
+{% for id, name in vlans.items() -%}
+{% if id != 'native' %}
+    switchport trunk allowed vlan add {{ id }}
+{% endif %}
+{% endfor %}
+    spanning-tree port type edge trunk
+    speed {{ int.speed }}
+    vpc {{ int.pc }}
+!
+{% elif int.type == 'trunk' %}
+interface Ethernet{{ int.slotid }}/{{ int.portid }}
+shut
+channel-group {{ int.pc }} mode active
+no shut
+!
+{% endif %}
+{% endfor %}
+

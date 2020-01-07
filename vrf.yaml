@@ -1,0 +1,14 @@
+---
+name : dist-1
+site : us6
+local_asn : 64705
+scan_rt : 807
+vrf:
+  name:
+    domvsm-v803-1
+    ilomexamgmt-v805-1
+    privateda-v800-1
+    privatemt-v801-1
+    publicmt-v802-1
+    storage-v806-1
+    tapefilermgmt-v804-1
